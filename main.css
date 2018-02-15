@@ -1,0 +1,70 @@
+#bfds-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    transition: 0.25s;
+    z-index: 99999999;
+    cursor: pointer;
+    box-sizing:border-box;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    background-color: #3d6bb4;
+}
+
+#bfds-button:hover {
+    box-shadow: 5px 5px 10px black;
+    right: 15px;
+    bottom: 15px;
+}
+
+#bfds-button.clicked {
+    right: 10px;
+    bottom: 10px;
+    box-shadow: none;
+}
+
+#bfds-button.clicked:hover {
+    right: 10px;
+    bottom: 10px;
+    box-shadow: none;
+}
+
+#yp_container {
+    cursor: pointer;
+    position: fixed;
+    resize: both;
+    border: solid black 1px;
+    width: 410px;
+    height: 310px;
+    z-index: 99999999;
+    background-color: rgba(61, 107, 180, 0.5);
+    background-size: contain;
+    background-position: 50%;
+}
+
+#yp_container > iframe {
+    border: 3px solid rgba(61, 107, 180);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#yp_exit {
+    position: absolute;
+    background-size: 100%;
+    border-radius: 50%;
+    z-index: 99999999;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    top: -10px;
+    right: -10px;
+    background-color: white;
+}
